@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Francy";
+  src: url("/font/francy/Francy.woff2") format("woff2");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nohemi";
+  src: url("/font/nohemi/Nohemi-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nohemi";
+  src: url("/font/nohemi/Nohemi-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nohemi";
+  src: url("/font/nohemi/Nohemi-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nohemi";
+  src: url("/font/nohemi/Nohemi-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nohemi";
+  src: url("/font/nohemi/Nohemi-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-primary: "Nohemi";
+
+  --color-lime-yellow: #cff30bff;
+  --color-white: #ffffffff;
+  --color-grey-olive: #7b7e6dff;
+  --color-onyx: #151515ff;
+  --color-black: #000500ff;
+}
+
+@layer utilities {
+  .section-padding-x {
+    @apply px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-14 max-w-360 mx-auto;
+  }
+}
+
+body {
+  font-family:
+    var(--font-primary),
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--color-onyx);
+  color: var(--color-white);
+}
